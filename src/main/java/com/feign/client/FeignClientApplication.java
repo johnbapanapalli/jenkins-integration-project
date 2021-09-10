@@ -20,6 +20,8 @@ public class FeignClientApplication {
 
     @GetMapping("/getAllUsers")
     public List<UserResponseItem> getAllEmployess() {
+        System.out.println("This is second commit message...");
+
         return userClient.getAllUsers();
     }
 
