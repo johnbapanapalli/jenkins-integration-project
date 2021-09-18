@@ -25,6 +25,11 @@ public class FeignClientApplication {
         return userClient.getAllUsers();
     }
 
+    @GetMapping("/jenkinsTest")
+    public String getEmployee() {
+        return "This is just for Jenkins job testing";
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(FeignClientApplication.class, args);
     }
